@@ -11,6 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>API Voll Med</name>
 	<description>API Voll Med</description>
 	<url/>
@@ -20,6 +21,9 @@
 	<developers>
 		<developer/>
 	</developers>
+	<modules>
+		<module>image</module>
+	</modules>
 	<scm>
 		<connection/>
 		<developerConnection/>

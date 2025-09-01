@@ -1,7 +1,7 @@
 package com.example.api.model;
 
 import com.example.api.dto.DadosCadastroMedico;
-import com.example.api.endereco.Endereco;
+import com.example.api.dto.endereco.Endereco;
 import com.example.api.medico.Especialidade;
 import jakarta.persistence.*;
 import lombok.*;

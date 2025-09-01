@@ -1,4 +1,4 @@
-package com.example.api.endereco;
+package com.example.api.dto.endereco;
 
 import com.example.api.dto.DadosEndereco;
 import jakarta.persistence.Embeddable;
