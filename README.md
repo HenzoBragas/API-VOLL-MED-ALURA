@@ -74,6 +74,6 @@ O projeto foi construído utilizando o que há de mais moderno no ecossistema Ja
 
 - Lombok: Para reduzir código boilerplate (getters, setters, construtores, etc.).
 
-Postman: Ferramenta para testes e validação dos endpoints da API.
+- Postman: Ferramenta para testes e validação dos endpoints da API.
 
 ##### Feito com 🔹 no curso da Alura.
