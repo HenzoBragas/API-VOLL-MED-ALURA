@@ -1,5 +1,6 @@
-package com.example.api.dto.endereco;
+package com.example.api.model.endereco;
 
+import com.example.api.dto.AtualizarDadosMedico;
 import com.example.api.dto.DadosEndereco;
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
@@ -29,4 +30,28 @@ public class Endereco {
         this.cidade = dados.cidade();
         this.uf = dados.uf();
     }
+    public void atualizarInformacoes(DadosEndereco dados) {
+        if(dados.logradouro() != null) {
+            this.logradouro = logradouro;
+        }
+        if(dados.bairro() != null) {
+            this.bairro = bairro;
+        }
+        if(dados.cep() != null) {
+            this.cep = cep;
+        }
+        if(dados.numero() != null) {
+            this.numero = numero;
+        }
+        if(dados.complemento() != null) {
+            this.complemento = complemento;
+        }
+        if(dados.cidade() != null) {
+            this.cidade = cidade;
+        }
+        if(dados.uf() != null) {
+            this.uf = uf;
+        }
+    }
+
 }

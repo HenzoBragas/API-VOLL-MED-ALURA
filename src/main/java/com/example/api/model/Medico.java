@@ -1,7 +1,8 @@
 package com.example.api.model;
 
+import com.example.api.dto.AtualizarDadosMedico;
 import com.example.api.dto.DadosCadastroMedico;
-import com.example.api.dto.endereco.Endereco;
+import com.example.api.model.endereco.Endereco;
 import com.example.api.medico.Especialidade;
 import jakarta.persistence.*;
 import lombok.*;
@@ -30,7 +31,10 @@ public class Medico {
     @Embedded
     private Endereco endereco;
 
+    private Boolean ativo;
+
     public Medico(DadosCadastroMedico dados) {
+        this.ativo = true;
         this.nome = dados.nome();
         this.email = dados.email();
         this.telefone = dados.telefone();
@@ -38,6 +42,21 @@ public class Medico {
         this.especialidade = dados.especialidade();
         this.endereco = new Endereco(dados.endereco());
 
+    }
+    public void atualizarInformacoes(AtualizarDadosMedico dados) {
+        if (dados.nome() != null) {
+            this.nome = nome;
+        }
+        if (dados.telefone() != null) {
+            this.telefone = telefone;
+        }
+        if (dados.endereco() != null) {
+            this.endereco.atualizarInformacoes(dados.endereco());
+        }
+    }
+
+    public void excluir() {
+        this.ativo = false;
     }
 
 }

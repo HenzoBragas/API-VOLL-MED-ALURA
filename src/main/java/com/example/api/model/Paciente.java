@@ -1,7 +1,7 @@
 package com.example.api.model;
 
 import com.example.api.dto.DadosCadastroPaciente;
-import com.example.api.dto.endereco.Endereco;
+import com.example.api.model.endereco.Endereco;
 import jakarta.persistence.*;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

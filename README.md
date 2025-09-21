@@ -11,7 +11,7 @@ O foco deste projeto é construir uma API robusta, seguindo as melhores prática
 
 ## 📱 Protótipo da Aplicação
 As funcionalidades da API foram pensadas para atender a uma aplicação como a do protótipo abaixo:
-![](image/img.png)
+![](src/image/img.png)
 
 ## 🎯 Objetivos do Projeto
 Desenvolvimento de uma API REST completa: Construir endpoints para todas as funcionalidades principais da clínica.
