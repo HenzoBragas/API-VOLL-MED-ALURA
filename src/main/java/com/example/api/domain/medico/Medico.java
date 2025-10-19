@@ -1,9 +1,8 @@
-package com.example.api.model;
+package com.example.api.domain.medico;
 
-import com.example.api.dto.AtualizarDadosMedico;
-import com.example.api.dto.DadosCadastroMedico;
-import com.example.api.model.endereco.Endereco;
-import com.example.api.medico.Especialidade;
+import com.example.api.dto.Medico.AtualizarDadosMedico;
+import com.example.api.dto.Medico.DadosCadastroMedico;
+import com.example.api.domain.endereco.Endereco;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -41,8 +40,8 @@ public class Medico {
         this.crm = dados.crm();
         this.especialidade = dados.especialidade();
         this.endereco = new Endereco(dados.endereco());
-
     }
+
     public void atualizarInformacoes(AtualizarDadosMedico dados) {
         if (dados.nome() != null) {
             this.nome = nome;
@@ -58,5 +57,4 @@ public class Medico {
     public void excluir() {
         this.ativo = false;
     }
-
 }

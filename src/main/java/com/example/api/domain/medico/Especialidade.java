@@ -1,4 +1,4 @@
-package com.example.api.medico;
+package com.example.api.domain.medico;
 
 public enum Especialidade {
     ORTOPEDIA,

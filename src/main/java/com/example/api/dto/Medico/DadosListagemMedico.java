@@ -1,7 +1,7 @@
-package com.example.api.dto;
+package com.example.api.dto.Medico;
 
-import com.example.api.medico.Especialidade;
-import com.example.api.model.Medico;
+import com.example.api.domain.medico.Especialidade;
+import com.example.api.domain.medico.Medico;
 
 public record DadosListagemMedico(Long id, String nome, String email, String crm, Especialidade especialidade) {
 

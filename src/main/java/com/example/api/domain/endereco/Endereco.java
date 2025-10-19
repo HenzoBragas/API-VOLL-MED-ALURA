@@ -1,6 +1,5 @@
-package com.example.api.model.endereco;
+package com.example.api.domain.endereco;
 
-import com.example.api.dto.AtualizarDadosMedico;
 import com.example.api.dto.DadosEndereco;
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;

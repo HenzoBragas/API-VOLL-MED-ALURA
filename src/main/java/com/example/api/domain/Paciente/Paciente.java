@@ -1,7 +1,8 @@
-package com.example.api.model;
+package com.example.api.domain.Paciente;
 
-import com.example.api.dto.DadosCadastroPaciente;
-import com.example.api.model.endereco.Endereco;
+import com.example.api.dto.Paciente.AtualizarDadosPaciente;
+import com.example.api.dto.Paciente.DadosCadastroPaciente;
+import com.example.api.domain.endereco.Endereco;
 import jakarta.persistence.*;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -31,7 +32,10 @@ public class Paciente {
     @Embedded
     private Endereco endereco;
 
+    private Boolean ativo;
+
     public Paciente(DadosCadastroPaciente dados) {
+        this.ativo = true;
         this.nome = dados.nome();
         this.email = dados.email();
         this.telefone = dados.telefone();
@@ -39,5 +43,20 @@ public class Paciente {
         this.endereco = new Endereco(dados.endereco());
     }
 
+    public void atualizarDadosPacientes(AtualizarDadosPaciente dados) {
+        if (dados.nome() != null) {
+            this.nome = nome;
+        }
+        if (dados.telefone() != null) {
+            this.telefone = telefone;
+        }
+        if (dados.endereco() != null) {
+            this.endereco.atualizarInformacoes(dados.endereco());
+        }
+    }
+
+    public void excluir() {
+        this.ativo = false;
+    }
 
 }
