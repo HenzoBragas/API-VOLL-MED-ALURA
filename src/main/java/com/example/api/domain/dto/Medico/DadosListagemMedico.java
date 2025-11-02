@@ -1,4 +1,4 @@
-package com.example.api.dto.Medico;
+package com.example.api.domain.dto.Medico;
 
 import com.example.api.domain.medico.Especialidade;
 import com.example.api.domain.medico.Medico;

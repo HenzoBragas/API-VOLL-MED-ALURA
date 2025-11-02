@@ -1,12 +1,12 @@
 package com.example.api.controller;
 
 
-import com.example.api.dto.Paciente.AtualizarDadosPaciente;
-import com.example.api.dto.Paciente.DadosCadastroPaciente;
-import com.example.api.dto.Paciente.DadosDetalhamentoPaciente;
-import com.example.api.dto.Paciente.DadosListagemPaciente;
+import com.example.api.domain.dto.Paciente.AtualizarDadosPaciente;
+import com.example.api.domain.dto.Paciente.DadosCadastroPaciente;
+import com.example.api.domain.dto.Paciente.DadosDetalhamentoPaciente;
+import com.example.api.domain.dto.Paciente.DadosListagemPaciente;
 import com.example.api.domain.Paciente.Paciente;
-import com.example.api.repository.PacienteRepository;
+import com.example.api.domain.Paciente.PacienteRepository;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.data.domain.Page;

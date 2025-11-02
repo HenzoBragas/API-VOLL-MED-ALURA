@@ -1,12 +1,12 @@
 package com.example.api.controller;
 
 
-import com.example.api.dto.Medico.AtualizarDadosMedico;
-import com.example.api.dto.Medico.DadosCadastroMedico;
-import com.example.api.dto.Medico.DadosDetalhamentoMedico;
-import com.example.api.dto.Medico.DadosListagemMedico;
+import com.example.api.domain.dto.Medico.AtualizarDadosMedico;
+import com.example.api.domain.dto.Medico.DadosCadastroMedico;
+import com.example.api.domain.dto.Medico.DadosDetalhamentoMedico;
+import com.example.api.domain.dto.Medico.DadosListagemMedico;
 import com.example.api.domain.medico.Medico;
-import com.example.api.repository.MedicoRepository;
+import com.example.api.domain.medico.MedicoRepository;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.data.domain.Page;

@@ -1,6 +1,6 @@
 package com.example.api.domain.endereco;
 
-import com.example.api.dto.DadosEndereco;
+import com.example.api.domain.dto.DadosEndereco;
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
 import lombok.*;

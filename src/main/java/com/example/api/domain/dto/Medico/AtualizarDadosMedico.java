@@ -1,6 +1,6 @@
-package com.example.api.dto.Medico;
+package com.example.api.domain.dto.Medico;
 
-import com.example.api.dto.DadosEndereco;
+import com.example.api.domain.dto.DadosEndereco;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 

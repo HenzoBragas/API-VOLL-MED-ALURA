@@ -1,7 +1,7 @@
 package com.example.api.domain.Paciente;
 
-import com.example.api.dto.Paciente.AtualizarDadosPaciente;
-import com.example.api.dto.Paciente.DadosCadastroPaciente;
+import com.example.api.domain.dto.Paciente.AtualizarDadosPaciente;
+import com.example.api.domain.dto.Paciente.DadosCadastroPaciente;
 import com.example.api.domain.endereco.Endereco;
 import jakarta.persistence.*;
 import jakarta.persistence.Entity;

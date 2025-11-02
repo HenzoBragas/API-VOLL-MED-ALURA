@@ -1,4 +1,4 @@
-package com.example.api.dto.Paciente;
+package com.example.api.domain.dto.Paciente;
 
 import com.example.api.domain.Paciente.Paciente;
 
